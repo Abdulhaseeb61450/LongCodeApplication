@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/simpleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LONGCODE APPICATION"
+        android:textColor="@color/orange"
+        android:textSize="30dp"
+        android:textAlignment="center"></TextView>
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_below="@+id/simpleImageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_corners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/sim1number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter SIM1 NUMBER"
+        android:textColor="@color/black"
+        android:inputType="textVisiblePassword"/>
+
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/sim2number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter SIM2 NUMBER"
+        android:textColor="@color/black"
+        android:inputType="textVisiblePassword"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_below="@+id/first"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_corners"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/outgoingapiforsmi1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Get Api URL For SIM1"
+            android:textColor="@color/black"
+            android:inputType="textVisiblePassword"/>
+
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/smslimitforsim1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter SMS Limit For SIM1"
+            android:textColor="@color/black"
+            android:inputType="textVisiblePassword"/>
+
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/smslimitforsim2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter SMS Limit For SIM2"
+            android:textColor="@color/black"
+            android:inputType="textVisiblePassword"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/second"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_corners"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/incomingapiforsim1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Incoming Api URL For SIM1"
+            android:textColor="@color/black"
+            android:inputType="textVisiblePassword"/>
+
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/incomingapiforsim2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Incoming Api URL For SIM2"
+            android:textColor="@color/black"
+            android:inputType="textVisiblePassword"/>
+
+        <Button
+            android:id="@+id/SetData"
+            android:layout_width="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="Save Data"
+            android:textColor="@color/orange"
+            android:background="@drawable/button_rounded"
+            android:layout_marginBottom="20dp"
+            android:onClick="SaveData"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ViewPage">
+
+    <TextView
+        android:layout_margin="@dimen/text_size10dp"
+        android:id="@+id/simpleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LONGCODE APPICATION"
+        android:textColor="@color/orange"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:background="@color/white"></TextView>
+
+    <LinearLayout
+        android:background="@drawable/layout_corners"
+        android:layout_below="@+id/simpleImageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/UpdateData"
+            android:layout_width="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Data"
+            android:background="@drawable/button_rounded"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="20dp"
+            android:onClick="EDIT"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/OutgoingData"
+            android:layout_width="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="View SMS"
+            android:background="@drawable/button_rounded"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="20dp"
+            android:onClick="VIEW"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/IncomingData"
+            android:layout_width="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="View Incoming"
+            android:background="@drawable/button_rounded"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="20dp"
+            android:onClick="INCOMING"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/ErrorData"
+            android:layout_width="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="View Errors"
+            android:background="@drawable/button_rounded"
+            android:textColor="@color/orange"
+            android:layout_marginBottom="20dp"
+            android:onClick="ERROR"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
