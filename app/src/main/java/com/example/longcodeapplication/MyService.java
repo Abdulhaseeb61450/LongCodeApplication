@@ -211,7 +211,6 @@ public class MyService extends Service implements MessageListener {
                                     int s = AlreadyExistList.size();
                                     if (s>0)
                                     {
-                                        //Do Not Add In Database
                                         Log.d("hello",smsid);
                                     }
                                     else
